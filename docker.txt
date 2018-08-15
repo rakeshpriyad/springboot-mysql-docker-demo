@@ -1,0 +1,41 @@
+docker run -d \
+    --name mysql-docker-container2 \
+    -e MYSQL_ROOT_PASSWORD=root \
+    -e MYSQL_DATABASE=restexample \
+    -e MYSQL_USER=app_user \
+    -e MYSQL_PASSWORD=password \
+    mysql:latest
+	
+	
+	
+	docker run -it --name rest-example-docker5 --link mysql-docker-container1:mysql -p 8090:8080 rest-example-docker 
+	
+	--link mysql-docker-container:mysql
+	
+	
+	docker run -d \
+    --name rest-example-docker \
+    --link mysql-docker-container:mysql \
+    -p 8080:8080 \
+    rest-example-docker
+	
+	
+	
+	docker exec -it mysql-docker-container2 restexample -uroot -p
+	
+	
+	ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
+	
+	-e "SPRING_PROFILES_ACTIVE=docker"
+	
+	
+	https://github.com/sivaprasadreddy/springboot-learn-by-example/tree/master/chapter-16/springboot-mysql-docker-demo
+	
+	docker run -d --name demo-mysql -e MYSQL_ROOT_PASSWORD=secret123 -e MYSQL_DATABASE=demo -e MYSQL_USER=dbuser -e MYSQL_PASSWORD=secret mysql:latest
+	
+	docker run -d --name springboot-docker-demo1 -e "SPRING_PROFILES_ACTIVE=docker" --link demo-mysql1:mysql -p 8080:8080 rkp/springboot-mysql-docker-demo
+	
+	
+	
+	git config --global user.name "rakeshpriyad"
+	git config --global user.email rakeshpriyad@gmail.com
