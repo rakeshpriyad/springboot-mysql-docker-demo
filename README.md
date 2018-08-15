@@ -1,7 +1,7 @@
 # SpringBoot : Spring Boot + Hibernate+ Mysql+ docker 
 
 
-### Chapter 16 : Deploying SpringBoot Applications
+### Deploying SpringBoot Applications
 
 **springboot-mysql-docker-demo**: This module demonstrates running SpringBoot application in Docker container.
 
