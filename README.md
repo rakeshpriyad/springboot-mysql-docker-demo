@@ -37,3 +37,5 @@ docker run -d --name springboot-docker-demo -e "SPRING_PROFILES_ACTIVE=docker" -
 Navigate to the directory where docker-compose.yml file is there.
 
 src/main/docker> docker-compose up
+
+http://localhost:8080/
